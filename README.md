@@ -29,13 +29,13 @@ Dim tickerIndex As Integer
 tickerIndex = 0
         
     'Loop over all the rows in the spreadsheet.
-    For i = 2 To RowCount
+    For j = 2 To RowCount
     
         ***
         ***
 
-            '3d Increase the tickerIndex.
-            If Cells(i, 1).Value <> Cells(i + 1, 1).Value Then
+            'Increase the tickerIndex.
+            If Cells(j, 1).Value <> Cells(j + 1, 1).Value Then
                 tickerIndex = tickerIndex + 1
             End If
     
