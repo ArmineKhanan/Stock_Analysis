@@ -53,7 +53,8 @@ Refactor the code successfully make the VBA script run faster.
         Cells(7 + i, 4).Value = (endingPrice / startingPrice) - 1
     Next 
 ```
-##Results
+## Results
+
 Getting red of nested loop:
 ```
 ''2a) Create a for loop to initialize the tickerVolumes to zero.
