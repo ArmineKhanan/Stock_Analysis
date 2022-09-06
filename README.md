@@ -44,3 +44,4 @@ tickerIndex = 0
 ## Results
 <img src="https://github.com/ArmineKhanan/stock-analysis/blob/main/ASA%20Runtime%20for%202018.png" width="450" />         <img src="https://github.com/ArmineKhanan/stock-analysis/blob/main/ASA%20Runtime%20for%202018%20if%20refactored.png" width="450" />
 ## Summary
+<span style="color: red;">text</span>
