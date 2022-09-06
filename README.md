@@ -10,9 +10,9 @@ In this challenge, we’ll edit, or refactor, our initial solution code. Afterwa
 ## Overview of Project
 Our purpose is to refactor the code successfully and make the VBA script run faster. In search of an effective scenario where we can go through all the data one time we came to the conclusion to get rid of the nested loop. 
 ```
-'4. Loop through the tickers
+'Loop through the tickers
     For i = 0 To 11
-            '5. Loop through rows in the data
+            'Loop through rows in the data
             For j = 2 To RowCount
                 ***
                 ***
@@ -24,10 +24,11 @@ Our purpose is to refactor the code successfully and make the VBA script run fas
 
 Getting rid of nested loop: initialising tickerIndex variable and increasing it's value by one whenever ticker name changes.
 ```
-''2a) Create a for loop to initialize the tickerVolumes to zero.
-    tickerIndex = 0
+'Initialize tickerIndex
+Dim tickerIndex As Integer
+tickerIndex = 0
         
-    ''2b) Loop over all the rows in the spreadsheet.
+    'Loop over all the rows in the spreadsheet.
     For i = 2 To RowCount
     
         ***
