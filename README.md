@@ -54,5 +54,32 @@ Refactor the code successfully make the VBA script run faster.
     Next 
 ```
 ##Results
+Getting red of nested loop:
+```
+''2a) Create a for loop to initialize the tickerVolumes to zero.
+    tickerIndex = 0
+        
+    ''2b) Loop over all the rows in the spreadsheet.
+    For i = 2 To RowCount
+    
+        '3a) Increase volume for current ticker
+        tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value
+        
+        '3b) Check if the current row is the first row with the selected tickerIndex.
+        If Cells(i, 1).Value <> Cells(i - 1, 1).Value Then
+            tickerStartingPrices(tickerIndex) = Cells(i, 6).Value
+        End If
+        
+        '3c) check if the current row is the last row with the selected ticker
+         'If the next row’s ticker doesn’t match, increase the tickerIndex.
+         If Cells(i, 1).Value <> Cells(i + 1, 1).Value Then
+            tickerEndingPrices(tickerIndex) = Cells(i, 6).Value
+        End If
 
+            '3d Increase the tickerIndex.
+            If Cells(i, 1).Value <> Cells(i + 1, 1).Value Then
+                tickerIndex = tickerIndex + 1
+            End If
+    
+    Next i
 ## Summary
