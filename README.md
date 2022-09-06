@@ -62,5 +62,5 @@ Getting red of nested loop:
 ```
 ## Results
 ![](https://github.com/ArmineKhanan/stock-analysis/blob/main/ASA%20Runtime%20for%202017%20if%20refactored.png | width=100)
-<img src="https://github.com/ArmineKhanan/stock-analysis/blob/main/ASA%20Runtime%20for%202017%20if%20refactored.png" width="300" height="100" />
+<img src="https://github.com/ArmineKhanan/stock-analysis/blob/main/ASA%20Runtime%20for%202017%20if%20refactored.png" width="600" height="200" />
 ## Summary
