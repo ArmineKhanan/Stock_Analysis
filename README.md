@@ -30,7 +30,6 @@ Refactor the code successfully make the VBA script run faster.
         Cells(7 + i, 4).Value = (endingPrice / startingPrice) - 1
     Next 
 ```
-## Results
 
 Getting red of nested loop:
 ```
@@ -60,4 +59,7 @@ Getting red of nested loop:
             End If
     
     Next i
+```
+## Results
+[![name]https://github.com/ArmineKhanan/stock-analysis/blob/main/ASA%20Runtime%20for%202017%20if%20refactored.png]
 ## Summary
