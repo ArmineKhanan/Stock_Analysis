@@ -61,5 +61,5 @@ Getting red of nested loop:
     Next i
 ```
 ## Results
-![name](https://github.com/ArmineKhanan/stock-analysis/blob/main/ASA%20Runtime%20for%202017%20if%20refactored.png)
+![name](https://github.com/ArmineKhanan/stock-analysis/blob/main/ASA%20Runtime%20for%202017%20if%20refactored.png =100x20)
 ## Summary
