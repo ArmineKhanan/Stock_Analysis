@@ -42,10 +42,9 @@ tickerIndex = 0
     Next i
 ```
 ## Results
+<img src="https://github.com/ArmineKhanan/stock-analysis/blob/main/ASA%20Runtime%20for%202017.png" width="450" />         <img src="https://github.com/ArmineKhanan/stock-analysis/blob/main/ASA%20Runtime%20for%202017%20if%20refactored.png" width="450" />
+
 <img src="https://github.com/ArmineKhanan/stock-analysis/blob/main/ASA%20Runtime%20for%202018.png" width="450" />         <img src="https://github.com/ArmineKhanan/stock-analysis/blob/main/ASA%20Runtime%20for%202018%20if%20refactored.png" width="450" />
 ## Summary
 <span style="color: red;">text</span>
 
-<span style="color:green;font-weight:700;font-size:20px">
-    markdown color font styles
-</span>
