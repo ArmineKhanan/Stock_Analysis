@@ -1,8 +1,9 @@
 # Stock Analysis
 UC Berkeley BootCamp challenge 2 (VBA)
 ## Problem Statement
-Steve's parents are passionate about green energy, and they have decided to invest all their money into DAQO New Energy Corporation. Steve, who's just graduated with his finance degree, decided to analyze several green energy stocks asked us for some help. We have be using an extension to Excel, built to automate tasks: Visual Basic for Applications, usually referred to as VBA.
-To do a little more research for his parents, Steve wants to expand the dataset to include the entire stock market over the last few years. Although our code works well for a dozen stocks, it might take a long time to execute for thousands of stocks.
+Steve's parents are passionate about green energy, and are eager to invest all their money into DAQO New Energy Corporation. Yet, they decided to first seek advice from Steve, who's just graduated with his finance degree. The letter, inhis turn applied to us for assistance in analysis. We solved the problem using an extension to Excel, built to automate tasks: Visual Basic for Applications, usually referred to as VBA.
+
+Steve is happy. Though, to do a little more research for his parents, Steve wants to expand the dataset to include the entire stock market over the last few years. Although our code works well for a dozen stocks, it might take a long time to execute for thousands of stocks.
 
 In this challenge, we’ll edit, or refactor, our initial solution code. Afterwards, we’ll determine whether refactoring our code successfully made the VBA script run faster. 
 
