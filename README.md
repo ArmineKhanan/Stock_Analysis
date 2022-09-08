@@ -7,7 +7,8 @@ Steve is happy. But to do a little more research for his parents, Steve wants to
 
 In this challenge, we will edit and refactor our initial solution code. Afterward, we plan to determine whether refactoring our code made the VBA script run faster.
 
-## Overview of Project
+## Results
+#### Script Editing
 Our purpose is to refactor the code successfully and make the VBA script run faster. In search of an effective scenario where we can go through all the data one time we came to the conclusion to get rid of the nested loop. 
 ```
 'Loop through the tickers
@@ -47,7 +48,7 @@ For i = 0 To 11
         Cells(7 + i, 3).Value = tickerVolumes(i)
         Cells(7 + i, 4).Value = (tickerEndingPrices(i) / tickerStartingPrices(i)) - 1
 ```
-### VBA code runtime recorded
+#### VBA code runtime recorded
 In order to assess the affect of changes on the speed of report production we decorated the whole presedure with the folowng script:
 ```
 Sub AllStocksAnalysisRefactored()
