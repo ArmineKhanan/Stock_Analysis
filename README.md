@@ -1,6 +1,6 @@
 # Stock Analysis
 UC Berkeley BootCamp challenge 2 (VBA)
-## Problem Statement
+## Overview of Project
 Steve's parents are passionate about green energy, and are eager to invest all their money into DAQO New Energy Corporation. Yet, they decided to first seek advice from Steve, who's just graduated with his finance degree. The letter, inhis turn applied to us for assistance in analysis. We solved the problem using an extension to Excel, built to automate tasks: Visual Basic for Applications, usually referred to as VBA.
 
 Steve is happy. Though, to do a little more research for his parents, Steve wants to expand the dataset to include the entire stock market over the last few years. Although our code works well for a dozen stocks, it might take a long time to execute for thousands of stocks.
@@ -38,7 +38,7 @@ Getting rid of nested loop: initialising tickerIndex variable and increasing it'
             End If
         Next i
 ```
-
+Loop through previously defined arrays to output the ticker name, daily volume, and return.
 ```
 For i = 0 To 11
         
@@ -47,12 +47,29 @@ For i = 0 To 11
         Cells(7 + i, 3).Value = tickerVolumes(i)
         Cells(7 + i, 4).Value = (tickerEndingPrices(i) / tickerStartingPrices(i)) - 1
 ```
-## Results
-Almost 2.5 times faster.
+### VBA code runtime recorded
+In order to assess the affect of changes on the speed of report production we decorated the whole presedure with the folowng script:
+```
+Sub AllStocksAnalysisRefactored()
+    Dim startTime As Single
+    Dim endTime  As Single
+    yearValue = InputBox("What year would you like to run the analysis on?")
+    startTime = Timer
+        ***
+        ***
+        ***
+    endTime = Timer
+    MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)
+
+End Sub
+```
+The screenshots below prove that the refactored script is almost 2.5 faster in average.
 
 <img src="https://github.com/ArmineKhanan/stock-analysis/blob/main/ASA%20Runtime%20for%202017.png" width="450" />                                    <img src="https://github.com/ArmineKhanan/stock-analysis/blob/main/ASA%20Runtime%20for%202017%20if%20refuctored.png" width="450" />
 
 <img src="https://github.com/ArmineKhanan/stock-analysis/blob/main/ASA%20Runtime%20for%202018.png" width="450" />                                    <img src="https://github.com/ArmineKhanan/stock-analysis/blob/main/ASA%20Runtime%20for%202018%20if%20refactored.png" width="450" />
+
 ## Summary
-<span style="color: red;">text</span>
+Code refactoring mayby time consuming and, even risky in case of legacy code. Though for the code maintainance it'ss readability and effectiveness that may be quite fruiteful. In hour case the user may even not notice the speed difference beetween original and refactored code. Though being aware of Steve's plans of broadening the analysis towards many companies, we believe our efforts will be rewarding in the future.
+In our case the refactored script make analysis work faster at least two times. But it has a limitation as compared with the initial. The refactored script will work effectively only in case the ticker names have the same sequence in the database as stated in our script.
 
