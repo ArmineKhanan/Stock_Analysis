@@ -25,21 +25,27 @@ Our purpose is to refactor the code successfully and make the VBA script run fas
 Getting rid of nested loop: initialising tickerIndex variable and increasing it's value by one whenever ticker name changes.
 ```
 'Initialize tickerIndex
-Dim tickerIndex As Integer
-tickerIndex = 0
+    Dim tickerIndex As Integer
+    tickerIndex = 0
         
     'Loop over all the rows in the spreadsheet.
-    For j = 2 To RowCount
-    
-        ***
-        ***
-
+        For i = 2 To RowCount
+            ***
+            ***
             'Increase the tickerIndex.
-            If Cells(j, 1).Value <> Cells(j + 1, 1).Value Then
+            If Cells(i, 1).Value <> Cells(i + 1, 1).Value Then
                 tickerIndex = tickerIndex + 1
             End If
-    
-    Next i
+        Next i
+```
+
+```
+For i = 0 To 11
+        
+        Worksheets("All Stocks Analysis").Activate
+        Cells(7 + i, 2).Value = tickers(i)
+        Cells(7 + i, 3).Value = tickerVolumes(i)
+        Cells(7 + i, 4).Value = (tickerEndingPrices(i) / tickerStartingPrices(i)) - 1
 ```
 ## Results
 Almost 2.5 times faster.
