@@ -1,5 +1,4 @@
 # Stock Analysis
-UC Berkeley BootCamp challenge 2 (VBA)
 ## Overview of Project
 Steve's parents are passionate about green energy and are eager to invest all their money into DAQO New Energy Corporation. Yet, they decided to seek advice from Steve, who graduated with his finance degree not long ago. The letter, in his turn, applied to us for assistance in analysis. We solved the problem using an extension to Excel, built to automate tasks: Visual Basic for Applications, usually referred to as VBA.
 
