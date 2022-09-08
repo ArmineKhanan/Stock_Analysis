@@ -8,7 +8,8 @@ In this challenge, we will edit and refactor our initial solution code. Afterwar
 
 ## Results
 #### Script Routine Refactoring
-Our purpose is to edit the code so that that Steve can get the exact same output faster. In search of an effective scenario where we can go through all the data one time we came to the conclusion to get rid of the nested loop. As shown in the code snipet below, the initial code loops through the entire dataset i times for each of 12 tickers:
+Our purpose is to edit the code so Steve can get the same output faster. In search of an effective scenario where we can go through all the data one time, we concluded to get rid of the nested loop. As shown in the code snippet below, the initial code loops through the entire dataset i times for each of 12 tickers:
+
 ```
 'Loop through the tickers
     For i = 0 To 11
@@ -22,7 +23,8 @@ Our purpose is to edit the code so that that Steve can get the exact same output
     Next i
 ```
 
-We decided to leverage the fact that tickers are sorted and have the same sequence in the dataset as in our code. In order to throw out nested solution we initialized the tickerIndex variable and increased it's value by one whenever ticker name changes.
+We decided to leverage the fact that tickers are sorted and have the same sequence in the dataset as in our code. To throw out the nested solution we initialized the tickerIndex variable and increased its value by one whenever the ticker name changed.
+
 ```
 'Initialize tickerIndex
     Dim tickerIndex As Integer
@@ -38,7 +40,9 @@ We decided to leverage the fact that tickers are sorted and have the same sequen
             End If
         Next i
 ```
-Afterwards implemented the loop accross previously defined arrays to pull the name, daily volume, and return for each ticker.
+
+Afterward, the loop goes across previously defined arrays to pull the name, daily volume, and return for each ticker.
+
 ```
 For i = 0 To 11
         
@@ -47,9 +51,10 @@ For i = 0 To 11
         Cells(7 + i, 3).Value = tickerVolumes(i)
         Cells(7 + i, 4).Value = (tickerEndingPrices(i) / tickerStartingPrices(i)) - 1
 ```
-The output of the two scripts is eaxactly the same. Yet, the second one works faster.
+The two subroutines output identical reports. Yet, the second one works faster.
+
 #### VBA Code Execution Record
-In order to estimate the affect of changes on the speed of report execution we encorporated folowng script in the subroutine:
+To estimate our efforts, we wrapped the subroutine with the following script:
 ```
 Sub AllStocksAnalysisRefactored()
     Dim startTime As Single
@@ -64,7 +69,7 @@ Sub AllStocksAnalysisRefactored()
 
 End Sub
 ```
-The screenshots below prove that the refactored script is almost 2.5 faster in average.
+The screenshots below prove that the refactored script is almost 2.5 faster on average.
 For 2017:
 
 <img src="https://github.com/ArmineKhanan/stock-analysis/blob/main/ASA%20Runtime%20for%202017.png" width="450" /> <img src="https://github.com/ArmineKhanan/stock-analysis/blob/main/ASA%20Runtime%20for%202017%20if%20refuctored.png" width="450" />
