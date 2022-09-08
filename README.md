@@ -1,8 +1,8 @@
 # Stock Analysis
 ## Overview of Project
-Steve's parents are passionate about green energy and are eager to invest all their money into DAQO New Energy Corporation. Yet, they decided to seek advice from Steve, who graduated with his finance degree not long ago. The letter, in his turn, applied to us for assistance in analysis. We solved the problem using an extension to Excel, built to automate tasks: Visual Basic for Applications, usually referred to as VBA.
+Steve's parents are passionate about green energy and are eager to invest all their money into DAQO New Energy Corporation. Yet, they decided to seek advice from Steve, who graduated with his finance degree not long ago. The latter, in his turn, applied to us for assistance in analysis. We solved the problem using an extension to Excel, built to automate tasks: Visual Basic for Applications, usually referred to as VBA.
 
-Steve is happy. But to do a little more research for his parents, Steve wants to expand the dataset to include the entire stock market over the last few years. Although our code works well for a dozen stocks, it might take a long time to execute for thousands of them.
+Steve is happy. But to do a little more research for his parents, he wants to expand the dataset to include the entire stock market over the last few years. Although our code works well for a dozen stocks, it might take a long time to execute for thousands of them.
 
 In this challenge, we will edit and refactor our initial solution code. Afterward, we plan to determine whether refactoring our code made the VBA script run faster.
 
@@ -72,5 +72,5 @@ The screenshots below prove that the refactored script is almost 2.5 faster in a
 ## Summary
 Code refactoring may be time-consuming and even a risky endeavor. For example, if one does not have an entire understanding of the code, they better refrain from refactoring. Though for code maintenance, its readability and effectiveness refactoring can be fruitful. 
 In our case, code refactoring resulted in speedy performance. Being aware of Steve's plans to broaden the analysis, we believe our efforts will be even more rewarding in the future. 
-Yet, the refactored script has a limitation as compared to the initial. It will work effectively if only the ticker names have the same sequence in the data source as in the script.
+Yet, the refactored script has a limitation as compared to the initial. It will work effectively if only the ticker names have the same sequence in the data source as in the script. That's why we better document VBA functionality before sharing it with Steve.
 
